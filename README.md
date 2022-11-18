@@ -10,6 +10,7 @@ Test assignment on Vue.js
 
 ## Links
 [Figma](https://www.figma.com/file/KFWCiGfveABlTLXI1gYEDw/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-Vue?node-id=0%3A1)
+[Demo](https://vue-test-zeta-olive.vercel.app/)
 
 ## How to start?
 

@@ -13,7 +13,7 @@ const store = createStore({
           title: "BXC",
           price: 12644,
           total_price: 12644,
-          image: "/src/assets/bxc.svg",
+          image: "/images/bxc.svg",
           parameters:
             "12-72/168 м3/ч / гидрорегулируемый расход / от датчика присутствия",
           vendor_code: "G2H1065",
@@ -24,7 +24,7 @@ const store = createStore({
           title: "G2H",
           price: 12644,
           total_price: 25288,
-          image: "/src/assets/g2h.svg",
+          image: "/images/g2h.svg",
           parameters:
             "12-72/168 м3/ч / гидрорегулируемый расход / от датчика присутствия",
           vendor_code: "G2H1065",
@@ -41,7 +41,7 @@ const store = createStore({
           price: 12644,
           description:
             "Вытяжное устройство для механической системы вентиляции",
-          image: "/src/assets/bxc.svg",
+          image: "/images/bxc.svg",
           price_range_ru: "6 848 ₽ – 56 584 ₽",
           price_range_en: "77.60 € – 643.86 €",
           parameters:
@@ -54,7 +54,7 @@ const store = createStore({
           price: 12644,
           description:
             "Многофункциональное вытяжное устройство для естественной и гибридной вентиляции",
-          image: "/src/assets/g2h.svg",
+          image: "/images/g2h.svg",
           price_range_ru: "6 848 ₽ – 56 584 ₽",
           price_range_en: "77.60 € – 643.86 €",
           parameters:
@@ -66,7 +66,7 @@ const store = createStore({
           title: "GHN",
           price: 12644,
           description: "Вытяжное устройство с датчиком присутствия",
-          image: "/src/assets/ghn.svg",
+          image: "/images/ghn.svg",
           price_range_ru: "6 848 ₽ – 56 584 ₽",
           price_range_en: "77.60 € – 643.86 €",
           parameters:
@@ -78,7 +78,7 @@ const store = createStore({
           title: "TDA",
           price: 12644,
           description: "Вытяжное устройство с датчиком присутствия",
-          image: "/src/assets/tda.svg",
+          image: "/images/tda.svg",
           price_range_ru: "6 848 ₽ – 56 584 ₽",
           price_range_en: "77.60 € – 643.86 €",
           parameters:
@@ -91,7 +91,7 @@ const store = createStore({
           price: 12644,
           description:
             "Вытяжное устройство для механической системы вентиляции",
-          image: "/src/assets/bxc.svg",
+          image: "/images/bxc.svg",
           price_range_ru: "6 848 ₽ – 56 584 ₽",
           price_range_en: "77.60 € – 643.86 €",
           parameters:
@@ -104,7 +104,7 @@ const store = createStore({
           price: 12644,
           description:
             "Многофункциональное вытяжное устройство для естественной и гибридной вентиляции",
-          image: "/src/assets/g2h.svg",
+          image: "/images/g2h.svg",
           price_range_ru: "6 848 ₽ – 56 584 ₽",
           price_range_en: "77.60 € – 643.86 €",
           parameters:

@@ -22,13 +22,27 @@
       >
     </div>
     <div class="cart__buttons">
-      <button class="cart__button cart__button_blue">Оформить заказ</button>
-      <button class="cart__button cart__button_white">Купить в 1 клик</button>
+      <button
+        class="cart__button cart__button_blue"
+        @click="sendRequestToServer"
+        :disabled="cartTotal === 0"
+      >
+        Оформить заказ
+      </button>
+      <button
+        class="cart__button cart__button_white"
+        @click="sendRequestToServer"
+        :disabled="cartTotal === 0"
+      >
+        Купить в 1 клик
+      </button>
     </div>
   </div>
 </template>
 
 <script>
+import axios from "axios";
+import { mapMutations } from "vuex";
 import { addSpaceToDigits } from "../utils/addSpaceToDigits";
 export default {
   computed: {
@@ -41,9 +55,33 @@ export default {
     installation() {
       return this.$store.getters["installation"];
     },
+    cartProducts() {
+      return this.$store.getters["cart"];
+    },
   },
   methods: {
     addSpaceToDigits,
+    ...mapMutations(["clearCart"]),
+
+    async sendRequestToServer() {
+      if (this.cartTotal === 0) return;
+      const order = {
+        totalPrice: this.cartTotal,
+        totalProductsQuantity: this.quantityTotal,
+        isInstallationRequested: this.installation,
+        products: this.cartProducts,
+      };
+      const response = await axios.post(
+        "https://vue-test-shop-cff89-default-rtdb.firebaseio.com/orders.json",
+        order
+      );
+      if (response.status === 200) {
+        this.clearCart();
+        alert("Спасибо за заказ!");
+      } else {
+        alert(response.statusText);
+      }
+    },
   },
 };
 </script>
@@ -127,6 +165,11 @@ export default {
 
     &:hover {
       opacity: 0.5;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+      cursor: default;
     }
 
     &_blue {

@@ -1,24 +1,22 @@
 # vue-test-app
+Test assignment on Vue.js
 
-This template should help get you started developing with Vue 3 in Vite.
+## Technologies and packages that I use in project
+* Vue 3
+* vuex
+* scss
+* axios
+* firebase
 
-## Recommended IDE Setup
+## Links
+[Figma](https://www.figma.com/file/KFWCiGfveABlTLXI1gYEDw/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-Vue?node-id=0%3A1)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+## How to start?
 
 ```sh
+git clone https://github.com/VeraChernushina/vue-test.git
+cd vue-test
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
 
